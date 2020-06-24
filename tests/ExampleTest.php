@@ -20,8 +20,8 @@ class ExampleTest extends TestCase {
 			'name' => $name,
 			'email' => $email]);
 		//conectar usuario
-		$this->actingAs($user, 'api');
-		$this->visit('api/user')
+		$this->actingAs($user, 'api')
+			->visit('api/user')
 			->see($name)
 			->see($email);
 	}
