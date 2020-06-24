@@ -1,8 +1,6 @@
 <?php
 
-use Illuminate\Foundation\Testing\DatabaseTransactions;
-
-class ExampleTest extends TestCase {
+class ExampleTest extends FeatureTestCase {
 	/**
 	 * A basic functional test example.
 	 *
@@ -10,8 +8,7 @@ class ExampleTest extends TestCase {
 	 */
 
 //	use DatabaseMigrations;
-	use DatabaseTransactions;
-	public function testBasicExample() {
+	public function test_basic_example() {
 
 		//crear usuario
 		$name = 'HENRY BARON';
